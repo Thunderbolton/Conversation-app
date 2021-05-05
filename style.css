@@ -1,0 +1,49 @@
+#header-text {
+    font-size: 40px;
+    border-bottom: 1px solid blue;
+    text-align: center;
+}
+
+.menu {
+    height: 150px;
+    width: 150px;
+}
+
+.card-container {
+    height: 450px;
+    width: 900px;
+    margin-left: 100px; 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* This will repeat 1fr 3 times. */
+    grid-gap: 30px; /* creates space between columns and rows. */
+    justify-items: center;
+}
+
+.card {
+    width: 230px;
+    height: 110px;
+    background: white;
+    border: blue 2px solid;
+    border-radius: 5%;
+    position: relative;
+}
+
+.card-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-60%, -5%); /* https://stackoverflow.com/questions/45536537/centering-in-css-grid - check the section labelled "CSS Positioning" */
+    font-size: 20px;
+}
+
+.card:hover {
+    background: lightgray;
+}
+
+.images {
+    position: absolute;
+    left: 75px;
+    height: 70px;
+    width: 70px;
+}
+
