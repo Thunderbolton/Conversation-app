@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-image: linear-gradient(90deg, rgb(239, 243, 245), rgb(140, 229, 245));
+}
+
 #header-text {
     font-size: 40px;
-    
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .menu {
@@ -14,47 +21,37 @@
 	left: 20%;
     width: 60%;
     height: 30px;
-    border-radius: 5px;
     outline: none;
 }
 
 #search-bar {
     position: relative;
-    left: 20%;
-    width: 60%;
-    height: 100%;
-    border-radius: 5px;
+    width: 100%;
+    height: 120%;
+    border-radius: 50px;
     outline: none;
 }
 
 .search-button {
     position: absolute;
-	top: 0;
-	right: 10%;
+	top: 10px;
+	right: 5%;
 	width: 80px;
-	height: 36px;
-    border-radius: 5px;
-	background: #7690da;
-	/* z-index: 1; */
-	cursor: pointer;
+	height: 20px;
+    border: none;
+    background-color: white;
+    outline: none;
 }
-
-/* .fas {
-    z-index: 5;
-    color: red;
-    width: 200px;
-    height: 200px;
-    
-} */
 
 .card-container {
     height: 450px;
     width: 900px;
     margin-left: 100px; 
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* This will repeat 1fr 3 times. */
-    grid-gap: 30px; /* creates space between columns and rows. */
+    grid-template-columns: repeat(5, 1fr); 
+    grid-gap: 30px; 
     justify-items: center;
+    z-index: 1;
 }
 
 .card {
@@ -64,18 +61,64 @@
     border: #7690da 2px solid;
     border-radius: 5%;
     position: relative;
+    word-wrap: break-word;
 }
 
-.card-text {
+.card-header {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-60%, -5%); /* https://stackoverflow.com/questions/45536537/centering-in-css-grid - check the section labelled "CSS Positioning" */
+    transform: translate(-50%, -5%);
     font-size: 20px;
+    white-space: nowrap;
+    font-family: 'Roboto', sans-serif;
 }
 
+.card-questions {
+    position: relative;
+    top: 20%;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    line-height: 60px;
+}
+
+.hide-questions {
+    visibility: hidden;
+} 
+
 .card:hover {
-    background: lightgray;
+    background: hsl(165, 72%, 62%);
+}
+
+.enlarge {
+    height: 690px; 
+    width: 700px;
+    position: absolute;
+    z-index: 99;
+    position:fixed;
+    left:36%;
+    top:35%;
+    margin-left:-150px;
+    margin-top:-150px;
+}
+
+.long-text {
+    font-size: 40px;
+}
+
+.enlarge-font {
+    font-size: 40px;
+    top: 7%;
+    transform: translate(-50%);
+}
+
+.enlarge-image {
+    position: absolute;
+    transform: translate(335%);
+    height: 70px;
+    width: 70px;
 }
 
 .images {
