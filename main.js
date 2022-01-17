@@ -171,8 +171,8 @@ oldAge.children[1].textContent = 'Old Age';
 const socialMedia = document.querySelector('#SocialMedia');
 socialMedia.children[1].textContent = 'Social Media';
 
-const CorporateResponsibility = document.querySelector('#CorporateResponsibility');
-CorporateResponsibility.children[1].textContent = 'Corporate Responsibility'
+const corporateResponsibility = document.querySelector('#CorporateResponsibility');
+corporateResponsibility.children[1].textContent = 'Corporate Responsibility'
 
 const cosmeticSurgery = document.querySelector('#CosmeticSurgery');
 cosmeticSurgery.children[1].textContent = 'Cosmetic Surgery';
