@@ -87,7 +87,6 @@ body {
     border: #7690da 2px solid;
     border-radius: 5%;
     position: relative;
-    word-wrap: break-word;
 }
 
 .card-header {
