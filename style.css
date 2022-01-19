@@ -69,22 +69,13 @@ body {
 @media (max-width: 1010px){
     .card-container {
         grid-template-columns: repeat(2, 1fr);
-        /* grid-gap: 10px */
     }
 }
 
 @media all and (max-width: 900px){
     .card-container {
         grid-template-columns: repeat(1, 1fr);
-        /* grid-gap: 10px */
     }
-
-    /* .enlarge {
-        left:6%;
-        top:5%;
-        margin-left:-50px;
-        margin-top:-50px;
-    } */
 }
 
 .card {
@@ -133,14 +124,9 @@ body {
     margin: -50px auto;
 }
 
-.long-text {
-    font-size: 40px;
-}
-
 .enlarge-font {
     font-size: 40px;
     top: 7%;
-    transform: translate(-50%);
 }
 
 .enlarge-image {
