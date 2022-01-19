@@ -94,7 +94,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -5%);
-    font-size: 20px;
+    font-size: clamp(1.1rem, 1.2vw, 2rem);
     white-space: nowrap;
 }
 
@@ -102,9 +102,9 @@ body {
     position: relative;
     top: 20%;
     text-align: center;
-    font-size: 26px;
+    font-size: clamp(1.3rem, 2vw, 1.7rem); 
     font-weight: 500;
-    line-height: 60px;
+    line-height: 70px;
 }
 
 .hide-questions {
@@ -121,7 +121,7 @@ body {
     position: absolute;
     z-index: 99;
     position:fixed;
-    margin: -50px auto;
+    margin: -100px auto;
 }
 
 .enlarge-font {
