@@ -153,6 +153,7 @@ allCards.forEach((card) => {
 });
 
 
+// Adding spacing to card texts containing 2 words
 const past = document.querySelector('#Past');
 past.children[1].textContent = 'the Past';
 
@@ -198,7 +199,7 @@ animalRights.children[1].textContent = 'Animal Rights';
 function toggleClasses(e) {
     e.currentTarget.classList.toggle("enlarge"); // enlarge the card
     e.currentTarget.children[0].classList.toggle("enlarge-image");
-    e.currentTarget.children[1].classList.toggle("enlarge-font"); // for card title text
+    e.currentTarget.children[1].classList.toggle("enlarge-card-title");
     e.currentTarget.children[2].classList.toggle("hide-questions");
 }
 
