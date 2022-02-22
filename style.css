@@ -131,6 +131,19 @@ body {
     top: 12%;
 }
 
+
+@media(max-width: 375px) {
+    .enlarge {
+        min-width: 280px;
+    }
+    .enlarge-card-title {
+        font-size: 1rem;
+    }
+    .card-questions {
+        font-size: 0.8rem;
+    }
+}
+
 .enlarge-image {
     position: absolute;
     margin: 0 auto;
