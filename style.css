@@ -4,6 +4,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: linear-gradient(90deg, rgb(239, 243, 245), rgb(140, 229, 245));
 }
@@ -42,6 +46,16 @@ body {
     border: none;
     background-color: white;
     outline: none;
+}
+
+.level-buttons {
+    /* border: 2px solid red; */
+    width: 450px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+
 }
 
 .card-container {
