@@ -24,7 +24,6 @@ body {
 	left: 20%;
     padding-left: 10px;
     outline: none;
-    /* border: solid red 2px; */
 }
 
 #search-bar {
@@ -49,7 +48,6 @@ body {
 }
 
 .level-buttons {
-    /* border: 2px solid red; */
     width: 450px;
     margin: auto;
     display: flex;
@@ -72,7 +70,6 @@ body {
 }
 
 .card-container {
-    /* height: 450px; */
     width: 90%;
     margin-top: 70px;
     margin-left: 5%; 
@@ -110,10 +107,10 @@ body {
 .card {
     width: 230px;
     height: 110px;
+    position: relative;
     background: white;
     border: #7690da 2px solid;
     border-radius: 5px;
-    position: relative;
 }
 
 .card-header {
@@ -130,9 +127,6 @@ body {
     text-align: center;
     width: 85%;
     margin: 0 auto;
-    font-size: clamp(1.1rem, 1.9vw, 1.7rem); 
-    line-height: 2.5em;
-    
 }
 
 .hide-questions {
@@ -150,6 +144,8 @@ body {
     z-index: 99;
     position: fixed;
     margin: -170px auto;
+    font-size: clamp(1.1rem, 1.9vw, 1.7rem); 
+    line-height: 2.5em;
 }
 
 .enlarge-card-title {
@@ -183,7 +179,6 @@ body {
 .images {
     position: absolute;
     left: 75px;
-    height: 70px;
     width: 70px;
 }
 
