@@ -9,7 +9,8 @@ html {
 }
 
 body {
-    background-image: linear-gradient(90deg, rgb(239, 243, 245), rgb(140, 229, 245));
+    background: linear-gradient(90deg, rgb(239, 243, 245), rgb(140, 229, 245));
+    background-size: 1600px;
 }
 
 #header-text {
@@ -48,14 +49,14 @@ body {
 }
 
 .level-buttons {
-    width: 450px;
+    width: 500px;
     margin: auto;
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
 }
 .level-buttons button {
-    font-size: 20px;
+    font-size: clamp(0.8rem, 1.2vw, 2rem);
     border: 2px solid darkslategray;
     border-radius: 10px;
     padding: 10px;
@@ -67,6 +68,12 @@ body {
     background-color: #7690da;
     color: #fff;
     transform: translateY(-7px);
+}
+
+@media (max-width: 415px) {
+    .level-buttons {
+        width: 300px;
+    }
 }
 
 .card-container {
